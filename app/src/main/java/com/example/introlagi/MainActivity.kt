@@ -2,6 +2,7 @@ package com.example.introlagi
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         with(binding){
             txtNumber.text = number.toString()
             btnCount.setOnClickListener {
+                // tambah angka
                 number++
                 txtNumber.text = number.toString()
             }
